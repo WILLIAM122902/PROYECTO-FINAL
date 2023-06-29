@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Encuesta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles2.css') }}">
+</head>
+
+<body>
+    <div class="formulario1">
+        <h1>Formulario de Encuesta</h1>
+        <form action="/resultados" method="POST">
+            {% for pregunta in preguntas %}
+                <div class="pregunta">
+                    <a>{{ pregunta }}</a>
+                    <input type="range" id="resp{{ loop.index }}" name="resp{{ loop.index }}" min="0" max="1" step="0.25" value="0" onChange="document.getElementById('out{{ loop.index }}').value=value" required>
+                    <output id="out{{ loop.index }}" name="out{{ loop.index }}" for="resp{{ loop.index }}">0</output>
+                    <img src="{{ url_for('static', filename='img/imagen' ~ loop.index ~ '.jpg') }}"  width="250" height="130">
+                </div>
+            {% endfor %}
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>

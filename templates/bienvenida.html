@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesb.css') }}">
+</head>
+<body>
+    <div class="formulario">
+        <h1>Bienvenid@! al test de LOOKING FRIENDS</h1>
+        <div class="texto">
+            <a>En este test responderás unas preguntas cortas para poder determinar quién es más compatible contigo basado en tus gustos y actividades favoritas</a>
+            <p></p>
+            <a>Las preguntas consisten en varios temas que se usarán para poder determinar tus gustos y poder unirlos con los gustos de otras personas</a>
+            <p></p>
+            <a>La manera de responder las preguntas es mediante un deslizador, el cual va desde 0 a 1, divido en 1/4 o 0.25, en donde lo colocarás según qué tanto te guste lo propuesto :)</a>
+            <a></a>
+            <input type="button" value="Continuar" onClick="location.href='/formulario';" />
+            <img src="{{ url_for('static', filename='img/amigo1.jpg') }}" alt="Imagen" style="width: 300px; height: 200px;">
+        </div>
+        <p></p>
+       
+    </div>
+</body>
+</html>
+

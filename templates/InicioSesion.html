@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Inicio Sesión</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+	<div class="formulario">
+		<h1>Inicio de Sesión</h1>
+		<div class="form">
+			<div class="username">
+				<input type="text" required>
+				<label>Nombre de usuario</label>
+			</div>
+			<div class="username">
+				<input type="password" required>
+				<label>Contraseña</label>
+			</div>
+			
+			<input type="submit" value="Iniciar Sesión" onClick="location.href='/introduccion';" />
+			
+		</div>
+	
+	</div>
+</body>
+</html>

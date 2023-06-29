@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Introduccion</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style1.css') }}">
+
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="" >
+            <span>
+              Looking Friends
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+
+      <div class="slider_bg-container">
+
+      </div>
+      <div class="slider-container">
+
+        <div class="detail-box">
+          <h1>
+            LOOKING FRIENDS<br>
+            Buscando amigos <br>
+          </h1>
+          <h2>
+            Aplicando lógica difusa
+          </h2>
+          <div>
+            <a onClick="location.href='/bienvenida';" class="slider-link" >
+              TEST
+            </a>
+          </div>
+        </div>
+        <div class="img-box">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{{ url_for('static', filename='images/slider-img.jpg') }}" alt="" >
+              </div>
+              <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/slider2-img.jpg') }}" alt="" >
+              </div>
+              <div class="carousel-item">
+                <img src="{{ url_for('static', filename='images/slider-img.jpg') }}" alt="" >
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- about section -->
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="custom_heading-container">
+              <h2>
+               ¿Qué es la amistad?
+              </h2>
+              <hr>
+            </div>
+            <p>
+              La amistad se puede definir como el afecto personal puro y desinteresado, generalmente recíproco, que nace y se fortalece entre dos o más personas y que la mayoría de los seres humanos tiene en gran estima. 
+              En general, la amistad es hacer el bien, uno al otro. 
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="{{ url_for('static', filename='images/about2-img.jpg') }}" alt="" >
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- end about section -->
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="container">
+      <div class="d-flex flex-column align-items-end">
+        <div class="custom_heading-container">
+          <hr>
+          <h2>
+            VENTAJAS 
+          </h2>
+
+        </div>
+        <p>
+          Los amigos pueden prevenir el aislamiento y la soledad y ofrecerte compañía si la necesitas. Los amigos también pueden hacer lo siguiente:
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="service_container layout_padding2">
+        <a href="">
+          <div class="box">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='images/s-2.png') }}" alt="" class="img-1">
+              <img src="{{ url_for('static', filename='images/s2-blue.png') }}" alt="" class="img-2">
+            </div>
+            <div class="name">
+              <h6>
+                Aumentan la sensación de que formas parte de un grupo y el sentido de finalidad
+              </h6>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="box">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='images/s-4.png') }}" alt="" class="img-1">
+              <img src="{{ url_for('static', filename='images/s4-blue.png') }}" alt="" class="img-2">
+            </div>
+            <div class="name">
+              <h6>
+                Te animan a cambiar o a evitar hábitos que sean poco saludables, como beber en exceso o no hacer ejercicio
+              </h6>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="box">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='images/s-5.png') }}" alt="" class="img-1">
+              <img src="{{ url_for('static', filename='images/s5-blue.png') }}" alt="" class="img-2">
+            </div>
+            <div class="name">
+              <h6>
+                Te dan más felicidad y reducen tu estrés
+              </h6>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- end service section -->
+  <!-- about section -->
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="custom_heading-container">
+              <h2>
+               ¿Por qué es importante la amistad?
+              </h2>
+              <hr>
+            </div>
+            <p>
+              Poseer amigos fomenta el sentido de pertenencia a estos grupos, lo cual aporta un gran valor emocional a la persona,
+              ya que sentirnos integrados en nuestro entorno más próximo suele estar directamente relacionado con un aumento de la autoestima y la motivación. 
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="{{ url_for('static', filename='images/about-img.jpg') }}" alt="" >
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- end about section -->
+
+  <!-- portfolio section -->
+
+  <section class="portfolio_section">
+    <div class="container">
+      <div class="custom_heading-container">
+        <h2>
+          Portfolio de usuarios
+        </h2>
+        <hr>
+      </div>
+      <p>
+        Aqui hay algunas fotos de usuarios que han compartido sus perfiles
+      </p>
+      <div class="layout_padding2-top">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='images/p-1.jpg') }}" alt="">
+              <a href="">
+                FERNANDO 
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='images/p-2.jpg') }}" alt="">
+              <a href="">
+                MARIANA 
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='images/p-3.jpg') }}" alt="">
+              <a href="">
+                LEONARDO 
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='images/p-4.jpg') }}" alt="">
+              <a href="">
+                FERNANDA
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='images/p-5.jpg') }}" alt="">
+              <a href="">
+                ALAN
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename='images/p-6.jpg') }}" alt="">
+              <a href="">
+                YESSICA
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end portfolio section -->
+  <!-- news section -->
+
+
+ 
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</body>
+</body>
+
+</html>

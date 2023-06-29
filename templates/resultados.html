@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de la Encuesta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesb.css') }}">
+</head>
+<style>
+    #foto{
+        top: 0px;
+        left: 0px;
+        margin: 0 auto;
+        padding: 1px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="formulario">
+        <h1>Aquí están tus resultados!</h1>
+        {% if perfiles %}
+            <form method="post">
+                <div class="texto">
+                    <a>A continuación se muestran el/la o los amigos con los que serías más compatible :</a>
+                    <p></p>
+                    <a>Recuerda que se hizo en base a las respuestas de cada pregunta, con un valor entre 0 y 1</a>
+                    <p></p>
+                    <a>Compatible con:</a>
+                    <p></p>
+                    <div class="perfil">
+                        <h3>Perfiles compatibles:</h3>
+                        <ul>
+                            {% for perfil in perfiles %}
+                                <li>{{ loop.index }}. Nombre: {{ perfil.nombre }}, Edad: {{ perfil.edad }}, Sexo: {{ perfil.sexo }}, Ocupación: {{ perfil.ocupacion }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>                    
+                    
+                    <img src="{{ url_for('static', filename='img/amigo1.jpg') }}" alt="Imagen" style="width: 300px; height: 200px;">
+                </div>
+                <p></p>
+                <!--<input type="button" value="Continuar" onClick="location.href='Primera.html';" /> -->
+            </form>
+        {% else %}
+            <p>No se encontraron perfiles compatibles.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
